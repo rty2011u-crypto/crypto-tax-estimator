@@ -1,0 +1,6 @@
+# This project currently uses only the Python standard library
+# (csv, json, decimal, dataclasses, datetime, argparse) — no external
+# dependencies to install for the code itself.
+#
+# Recommended for development, not required to run:
+# pytest>=7.0

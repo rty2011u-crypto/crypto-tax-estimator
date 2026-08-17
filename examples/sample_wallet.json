@@ -1,0 +1,17 @@
+[
+  {
+    "id": "w1",
+    "timestamp": "2026-03-15T00:00:00",
+    "type": "transfer_out",
+    "asset": "BTC",
+    "amount": "0.05",
+    "counterparty_address": "bc1qexampleunknownaddress000000"
+  },
+  {
+    "id": "w2",
+    "timestamp": "2026-04-15T00:00:00",
+    "type": "mining_income",
+    "asset": "BTC",
+    "amount": "0.01"
+  }
+]
