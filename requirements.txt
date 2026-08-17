@@ -1,6 +1,8 @@
-# This project currently uses only the Python standard library
-# (csv, json, decimal, dataclasses, datetime, argparse) — no external
-# dependencies to install for the code itself.
-#
+# Core pipeline (CLI, tests): standard library only — csv, json, decimal,
+# dataclasses, datetime, argparse. No install needed for those.
+
+# Dashboard (app.py) requires:
+streamlit>=1.30
+
 # Recommended for development, not required to run:
 # pytest>=7.0

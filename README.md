@@ -81,7 +81,32 @@ via `InsufficientLotsError` rather than guess a cost basis of zero.
 6. Optionally apply the Russian NDFL bracket calculation (13% up to
    ₽2.4M profit/year, 15% above that) on top of the gain/loss figures.
 
-## Running it
+## Dashboard (optional)
+
+`app.py` is a local Streamlit dashboard: upload your files, resolve any
+flagged transfers in a proper UI instead of the terminal, and see results
+as a styled table with a download button — instead of the CLI's CSV-only
+output. It calls directly into the same `src/` modules as the CLI and
+tests; no calculation logic is duplicated in the UI layer.
+
+```
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Runs entirely on your machine — nothing is sent anywhere.
+
+**Honesty note:** this was built in an environment with no ability to
+install or launch Streamlit. It has been verified two ways short of an
+actual live run: `py_compile` for syntax, and a full simulated
+click-through (upload → review → compute → results) against a fake
+stand-in for the Streamlit API, using the real example files, producing
+results that match the CLI and test suite exactly. What it has **not**
+been checked against is Streamlit's real API surface or how it actually
+looks and behaves in a browser. Report anything that breaks when you run
+it for real.
+
+## Running the CLI
 
 ```
 python3 main.py \
